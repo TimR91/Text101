@@ -1,0 +1,118 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class AdventureGame : MonoBehaviour {
+
+ //   [SerializeField] Text textComponent;
+ //   [SerializeField] private State startingState;
+ //   //[SerializeField] TextMeshProUGUI karmaText;
+ //   public static int karma = 0;
+ //   public static string result = " ";
+ //   State state;
+
+	//// Use this for initialization
+	//void Start () {                                // Void start will run everything within the curly braces with no return type. 
+ //       state = startingState;                     // variable state is equal to starting state
+ //       textComponent.text = state.GetStateStory();// 
+ //      // karmaText.text = karma.ToString();
+	//}
+	
+	//// Update is called once per frame
+	//void Update () {
+	//	ManageState();
+	//}
+
+
+ //   private void ManageState()
+ //   {
+ //       var nextStates = state.GetNextStates(); // return next states from player choice in game ties to STATE.cs
+        
+
+
+ //      if (Input.GetKeyDown(KeyCode.Alpha1))   // assigns key number one (alpha1)
+ //      {
+ //         state = nextStates[0];
+ //         if(state = nextStates[0])
+ //         {
+ //            karma++;
+ //         }
+ //      }
+
+ //      else if (nextStates.Length > 1 && (Input.GetKeyDown(KeyCode.Alpha2))) //assigns key numnber 2 (alpha2) and if statelength is greater than 1 the key will work
+ //      {
+ //          state = nextStates[1];
+ //          if(state = nextStates[1])
+ //          {
+ //             karma--;
+ //          }
+ //      }
+ //      else if (nextStates.Length > 2 && (Input.GetKeyDown(KeyCode.Alpha3))) //assigns key number 3 (alpha3) and if state lenght is greater than 2 the key will work
+ //      {
+ //          state = nextStates[2];
+ //      }
+ //      textComponent.text = state.GetStateStory();
+ //   }
+
+ //   //public void GetKarma()      // Function for karma 
+ //   //{
+ //   //    if (karma > 0)
+ //   //    {
+ //   //        result = "Will rest in peace. You won the game and justice was served!";
+ //   //    }
+ //   //    else if (karma < 0)
+ //   //    {
+ //   //        result = "Will not rest in peace. You won the game but got revenge at great cost!";
+ //   //    }
+ //   //    else if (karma == 0)
+ //   //    {
+ //   //        result = "Will rest in peace. You lost the game!";
+ //   //    }
+ //   //}
+
+ //   //public void EndGame()
+ //   //{
+ //   //    GetKarma();
+ //   //}
+
+  
+
+
+
+}
+
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class AdventureGame : MonoBehaviour {
+    [SerializeField] Button button;
+    [SerializeField] TextMeshProUGUI karmaText;
+    [SerializeField] Text textComponent;
+
+    SceneLoader scene;
+    private SceneLoader startingScene;
+
+    void Start()
+    {
+        scene = startingScene;                     // variable state is equal to starting state
+        textComponent.text = " ";
+        StartGame();
+    }
+
+     void StartGame()
+    {
+        
+    }
+
+
+
+    
+}
